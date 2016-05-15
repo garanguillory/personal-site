@@ -1,0 +1,196 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	1). universal
+	2). navbar
+	3). about
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ------ universal ------- */
+
+	html {
+		font:16px;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.ng-cloak {
+		display: none;
+	}
+
+	.green {
+		color: green;
+	}
+
+	.red {
+		color: red;
+	}
+
+	.centered {
+		text-align: center;
+	}
+
+	.wrapper {
+		margin: 0 1rem;
+	}
+
+/* ------- navbar -------- */
+	
+	.main-navbar {
+
+	}
+
+	.main-navbar ul {
+		border-bottom: 1px solid black;
+		position: relative;
+		top: -3rem;
+	}
+
+	.main-navbar ul li {
+		display: inline-block;
+	}
+
+	.main-navbar ul li:first-child {
+		/*position: absolute;*/
+	}
+
+	.main-navbar .nav-brand {
+		bottom: -1.75rem;
+		font-size: 4rem;
+		margin-bottom: 0rem;
+		padding-left: 0rem;
+		position: relative;
+	}
+
+	.main-navbar .nav-link {
+		padding-left: 1rem;
+		position: relative;
+		bottom: -4.65rem;
+	}
+
+
+
+/* ------- about -------- */
+
+	.about-section {
+		height: 90vh;
+	}
+	.about-image {
+
+	}
+	.about-description {
+
+	}
+
+/* ------- projects -------- */
+
+	.projects-navbar {
+
+	}
+
+	.projects-navbar ul {
+		border-bottom: 1px solid black;
+		position: relative;
+		top: -3rem;
+	}
+
+	.projects-navbar ul li {
+		display: inline-block;
+	}
+
+	.projects-navbar ul li:first-child {
+		/*position: absolute;*/
+	}
+
+	.projects-navbar .nav-brand {
+		bottom: -1.75rem;
+		font-size: 4rem;
+		margin-bottom: 0rem;
+		padding-left: 0rem;
+		position: relative;
+	}
+
+	.projects-navbar .nav-link {
+		padding-left: 1rem;
+		position: relative;
+		bottom: -4.65rem;
+	}
+	
+	.projects-navbar ul {
+		border-bottom: 1px solid black;
+		position: relative;
+		top: -3rem;
+	}
+
+	.projects-section {
+		height: 100vh;
+	}
+	.projects-list {
+
+	}
+	.projects-image {
+
+	}
+
+	/* ------- contact -------- */
+
+		.contact-navbar {
+
+		}
+
+		.contact-navbar ul {
+			border-bottom: 1px solid black;
+			position: relative;
+			top: -3rem;
+		}
+
+		.contact-navbar ul li {
+			display: inline-block;
+		}
+
+		.contact-navbar ul li:first-child {
+			/*position: absolute;*/
+		}
+
+		.contact-navbar .nav-brand {
+			bottom: -1.75rem;
+			font-size: 4rem;
+			margin-bottom: 0rem;
+			padding-left: 0rem;
+			position: relative;
+		}
+
+		.contact-navbar .nav-link {
+			padding-left: 1rem;
+			position: relative;
+			bottom: -4.65rem;
+		}
+		
+		.contact-navbar ul {
+			border-bottom: 1px solid black;
+			position: relative;
+			top: -3rem;
+		}
+
+		.contact-section {
+			height: 100vh;
+		}
+
+
+
+
