@@ -2,15 +2,17 @@
 <html lang="en" ng-app='Garan'>
   <head>
     <meta charset="utf-8">
-    <title>Garan Guillory</title>
+    <title>Garan Guillory: Software Developer</title>
     
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/css/skeleton.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Poiret+One|Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:200,400,600,900|Poiret+One' rel='stylesheet' type='text/css'>
+    
   </head>
-  <body>
+  <body ng-controller="GaransController">
+
   <div class="container">
 
     <nav class="main-navbar" id="about">
@@ -20,7 +22,6 @@
             <li class="nav-brand"><a ng-href="">Garan Guillory</a></li>
             <li class="nav-link u-pull-right"><a ng-href="#contact">Contact</a></li>
             <li class="nav-link u-pull-right"><a ng-href="#projects">Projects</a></li>
-            <!-- <li class="nav-link u-pull-right"><a ng-href="#about">About</a></li> -->
           </ul>
         </div>
       </div>
@@ -28,16 +29,18 @@
 
 <!-- about-section -->
 
-    <div class="about-section">
+    <div class="about-section"> <!-- need centered ??? -->
       <div class="row">
-        <div class="four columns" style="border: 1px solid black">
-          <img class="about-image u-max-full-width" src="http://placehold.it/900x900">
-        </div>
-        <div class="eight columns" style="border: 1px solid black">
-          <p class="about-description u-max-full-width"> eight columns Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, asperiores, labore. Aliquid dolor, quisquam cumque aliquam fuga, commodi dolore ad aperiam iusto, amet repellendus nemo. Voluptatum eos nihil distinctio, ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quaerat sit iste laborum eius voluptatem expedita nostrum fugit molestias quidem suscipit veniam, enim quam. Doloremque cum nisi praesentium deserunt dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dignissimos repellat, tempore. Nisi ullam distinctio voluptatem perferendis minima praesentium harum necessitatibus corporis, magni suscipit, quos. Incidunt dolor inventore quo repudiandae.</p>
+        <div class="twelve columns">
+        <span id="about"></span>
+          <p class="about-description u-max-full-width">
+            Web Developer based out of Austin, Texas. I solve problems using software.
+              <br>
+            My background is in Economics and Spanish. I graduated from <a ng-href="http://www.galvanize.com/courses/web-development/#.V2ByhxQrJ0u" target="_blank">Galvanize's full-stack web development program</a> in June of 2016. I work with the MEAN stack (JavaScript, MongoDB, Express, Angular, &amp; Node). I also work with PostgreSQL, and I have experience working with Twilio. Link to my <a ng-href="assets/GaranGuilloryResume.pdf" target="_blank">resume.</a> 
+          </p>
         </div>
       </div>
-    </div>
+    </div> <!-- end about-section -->
 
 <!-- projects-section -->
 
@@ -53,18 +56,58 @@
           </div>
         </div>
       </nav>
+
       <div class="row">
-        <div class="twelve columns">
-          <div class="">
-            <p>projects section</p>
-          </div>
+        <div class="four columns">
+          <projects
+            title="Note Cards"
+            url="http://notecards-garan.herokuapp.com/"
+            images="[
+            'assets/images/notecard/notecard-profile-view.jpg',
+            'assets/images/notecard/notecard-newdeck-view.jpg',
+            'assets/images/notecard/notecard-deck-view.jpg',
+            'assets/images/notecard/notecard-study-view.jpg',
+            'assets/images/notecard/notecard-editdeck-view.jpg']"
+            technologies="['Angular', 'PostgreSQL', 'Knex.js', 'Express', 'Node', 'JWTs', 'Bootstrap']">
+          </projects>
+        </div>
+        
+        <div class="four columns">
+          <projects
+            title="Reddit Clone"
+            url="http://reddit-clone-garan.herokuapp.com/"
+            images="[
+            'assets/images/reddit-clone/reddit-clone-home-view.jpg',
+            'assets/images/reddit-clone/reddit-clone-newpost-view.jpg',
+            'assets/images/reddit-clone/reddit-clone-comment-view.jpg']"
+            technologies="['Angular', 'Mongo', 'Mongoose', 'Express', 'Node', 'Auth0', 'Bootstrap']">
+          </projects>
+        </div>
+        
+        <div class="four columns">
+          <projects
+            title="Employee Scheduling"
+            url="http://clash-scheduling.herokuapp.com/"
+            images="[
+              'assets/images/employee-scheduling/employee-scheduling-landing-page-view.jpg',
+              'assets/images/employee-scheduling/employee-scheduling-login-view.jpg',
+              'assets/images/employee-scheduling/employee-scheduling-signup-view.jpg',
+              'assets/images/employee-scheduling/employee-scheduling-options-view.jpg',
+              'assets/images/employee-scheduling/employee-scheduling-individual-employee-view.jpg',
+              'assets/images/employee-scheduling/employee-scheduling-addbulk-view.jpg',
+              'assets/images/employee-scheduling/employee-scheduling-calendar-view.jpg']"
+            technologies="['Angular', 'PostgreSQL', 'Knex', 'Express', 'Node', 'JWTs', 'Bootstrap']">
+          </projects>
         </div>
       </div>
+
     </div>
+
+  <br>
 
 <!-- contact-section -->
 
-    <div class="contact-section" id="contact">
+    <div class="contact-section">
       <nav class="contact-navbar">
         <div class="row">
           <div class="twelve columns">
@@ -78,17 +121,27 @@
       </nav>
       <div class="row">
         <div class="twelve columns">
-          <div class="">
-            <p>contact section</p>
-          </div>
+        <span id="contact"></span>
+          <p class="contact-description u-max-full-width">
+            For questions, work inquiries, or just saying hey, drop me a line at garanguillory@gmail.com. I am available for freelance work on a case by case basis.
+          </p>
         </div>
       </div>
     </div>
-
+    <ul class="contact-icons centered">
+      <li><a ng-href="https://www.linkedin.com/in/garan-guillory-34093b61" target="_blank" title="Linkedin"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+      <li><a ng-href="mailto:garanguillory@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+      <li><a ng-href="https://github.com/garanguillory" target="_blank" title="Linkedin"><i class="fa fa-github fa-2x" aria-hidden="true"></i></li>
+    </ul>
   </div>
+  
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular.min.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="app/non-angular/scroll.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/components/projects/projects.directive.js"></script>
+    <script type="text/javascript" src="app/components/projects/projects.service.js"></script>
+    <!-- <script type="text/javascript" src="app/components/pong/pong.directive.js"></script> -->
+    <!-- <script type="text/javascript" src="app/components/pong/pong.service.js"></script> -->
   </body>
 </html>

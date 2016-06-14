@@ -1,0 +1,228 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	1). universal
+	2). main navbar
+	3). projects navbar
+	4). contact navbar
+	5). about
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ------ universal ------- */
+
+	html {
+		font-size:10px;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.ng-cloak {
+		display: none;
+	}
+
+	.green {
+		color: green;
+	}
+
+	.red {
+		color: red;
+	}
+
+	.centered {
+		text-align: center;
+	}
+
+	.wrapper {
+		margin: 0 1rem;
+	}
+
+/* ------- navbar -------- */
+	
+	.main-navbar {
+		ul {
+				border-bottom: 1px solid black;
+				position: relative;
+				top: -3rem;
+				li {
+						display: inline-block;
+					}
+			}
+		.nav-brand {
+				bottom: -1.75rem;
+				font-size: 4rem;
+				font-weight: 200;
+				margin-bottom: 0rem;
+				padding-left: 0rem;
+				position: relative;
+			}
+		.nav-link {
+				padding-left: 1rem;
+				position: relative;
+				bottom: -4.65rem;
+			}
+	}
+
+
+/* ------- about -------- */
+
+	.about-section {
+		height: 90vh;
+	}
+	.about-image {
+
+	}
+	.about-description {
+		
+		a {
+			font-weight: 200;
+		}
+	}
+
+/* ------- projects -------- */
+
+	.projects-navbar {
+		ul {
+				border-bottom: 1px solid black;
+				position: relative;
+				top: -3rem;
+				li {
+						display: inline-block;
+					}
+			}
+		.nav-brand {
+				bottom: -1.75rem;
+				font-size: 4rem;
+				font-weight: 200;
+				margin-bottom: 0rem;
+				padding-left: 0rem;
+				position: relative;
+			}
+		.nav-link {
+				padding-left: 1rem;
+				position: relative;
+				bottom: -4.65rem;
+			}
+	}
+
+	.projects-section {
+		height: 100vh;
+	}
+	.projects-list {
+
+	}
+	.projects-image {
+
+	}
+
+	.technologies {
+		li {
+			display: inline-block;
+			margin-bottom: 0rem;
+		}
+	}
+
+/* ------- contact -------- */
+
+	.contact-navbar {
+		ul {
+					border-bottom: 1px solid black;
+					position: relative;
+					top: -3rem;
+					li {
+								display: inline-block;
+							}
+				}
+		.nav-brand {
+					bottom: -1.75rem;
+					font-size: 4rem;
+					font-weight: 200;
+					margin-bottom: 0rem;
+					padding-left: 0rem;
+					position: relative;
+				}
+		.nav-link {
+					padding-left: 1rem;
+					position: relative;
+					bottom: -4.65rem;
+				}
+	}
+
+	.contact-section {
+		height: 100vh;
+	}
+
+	.contact-icons {
+		li {
+			display: inline-block;
+			margin: 0 1rem;
+		}
+	}
+
+/* ------- games -------- */
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+	
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+
+	.contact-section {
+		height: 85vh;
+	}
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+	.contact-section {
+		height: 90vh;
+	}
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	
+	.contact-section {
+		height: 90vh;
+	}
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+	
+	.contact-section {
+		height: 90vh;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+

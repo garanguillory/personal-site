@@ -1,196 +1,146 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 	1). universal
-	2). navbar
-	3). about
+	2). main navbar
+	3). projects navbar
+	4). contact navbar
+	5). about
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 /* ------ universal ------- */
+html {
+  font-size: 10px; }
 
-	html {
-		font:16px;
-	}
+ul {
+  padding-left: 0; }
 
-	ul {
-		padding-left: 0;
-	}
+li {
+  list-style: none; }
 
-	li {
-		list-style: none;
-	}
+a {
+  color: inherit;
+  text-decoration: none; }
 
-	a {
-		color: inherit;
-		text-decoration: none;
-	}
+a:hover {
+  text-decoration: none; }
 
-	a:hover {
-		text-decoration: none;
-	}
+.ng-cloak {
+  display: none; }
 
-	.ng-cloak {
-		display: none;
-	}
+.green {
+  color: green; }
 
-	.green {
-		color: green;
-	}
+.red {
+  color: red; }
 
-	.red {
-		color: red;
-	}
+.centered {
+  text-align: center; }
 
-	.centered {
-		text-align: center;
-	}
-
-	.wrapper {
-		margin: 0 1rem;
-	}
+.wrapper {
+  margin: 0 1rem; }
 
 /* ------- navbar -------- */
-	
-	.main-navbar {
+.main-navbar ul {
+  border-bottom: 1px solid black;
+  position: relative;
+  top: -3rem; }
+  .main-navbar ul li {
+    display: inline-block; }
 
-	}
+.main-navbar .nav-brand {
+  bottom: -1.75rem;
+  font-size: 4rem;
+  font-weight: 200;
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+  position: relative; }
 
-	.main-navbar ul {
-		border-bottom: 1px solid black;
-		position: relative;
-		top: -3rem;
-	}
-
-	.main-navbar ul li {
-		display: inline-block;
-	}
-
-	.main-navbar ul li:first-child {
-		/*position: absolute;*/
-	}
-
-	.main-navbar .nav-brand {
-		bottom: -1.75rem;
-		font-size: 4rem;
-		margin-bottom: 0rem;
-		padding-left: 0rem;
-		position: relative;
-	}
-
-	.main-navbar .nav-link {
-		padding-left: 1rem;
-		position: relative;
-		bottom: -4.65rem;
-	}
-
-
+.main-navbar .nav-link {
+  padding-left: 1rem;
+  position: relative;
+  bottom: -4.65rem; }
 
 /* ------- about -------- */
+.about-section {
+  height: 90vh; }
 
-	.about-section {
-		height: 90vh;
-	}
-	.about-image {
-
-	}
-	.about-description {
-
-	}
+.about-description a {
+  font-weight: 200; }
 
 /* ------- projects -------- */
+.projects-navbar ul {
+  border-bottom: 1px solid black;
+  position: relative;
+  top: -3rem; }
+  .projects-navbar ul li {
+    display: inline-block; }
 
-	.projects-navbar {
+.projects-navbar .nav-brand {
+  bottom: -1.75rem;
+  font-size: 4rem;
+  font-weight: 200;
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+  position: relative; }
 
-	}
+.projects-navbar .nav-link {
+  padding-left: 1rem;
+  position: relative;
+  bottom: -4.65rem; }
 
-	.projects-navbar ul {
-		border-bottom: 1px solid black;
-		position: relative;
-		top: -3rem;
-	}
+.projects-section {
+  height: 100vh; }
 
-	.projects-navbar ul li {
-		display: inline-block;
-	}
+.technologies li {
+  display: inline-block;
+  margin-bottom: 0rem; }
 
-	.projects-navbar ul li:first-child {
-		/*position: absolute;*/
-	}
+/* ------- contact -------- */
+.contact-navbar ul {
+  border-bottom: 1px solid black;
+  position: relative;
+  top: -3rem; }
+  .contact-navbar ul li {
+    display: inline-block; }
 
-	.projects-navbar .nav-brand {
-		bottom: -1.75rem;
-		font-size: 4rem;
-		margin-bottom: 0rem;
-		padding-left: 0rem;
-		position: relative;
-	}
+.contact-navbar .nav-brand {
+  bottom: -1.75rem;
+  font-size: 4rem;
+  font-weight: 200;
+  margin-bottom: 0rem;
+  padding-left: 0rem;
+  position: relative; }
 
-	.projects-navbar .nav-link {
-		padding-left: 1rem;
-		position: relative;
-		bottom: -4.65rem;
-	}
-	
-	.projects-navbar ul {
-		border-bottom: 1px solid black;
-		position: relative;
-		top: -3rem;
-	}
+.contact-navbar .nav-link {
+  padding-left: 1rem;
+  position: relative;
+  bottom: -4.65rem; }
 
-	.projects-section {
-		height: 100vh;
-	}
-	.projects-list {
+.contact-section {
+  height: 100vh; }
 
-	}
-	.projects-image {
+.contact-icons li {
+  display: inline-block;
+  margin: 0 1rem; }
 
-	}
+/* ------- games -------- */
+/* Larger than mobile */
+/* Larger than phablet */
+@media (min-width: 550px) {
+  .contact-section {
+    height: 85vh; } }
 
-	/* ------- contact -------- */
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .contact-section {
+    height: 90vh; } }
 
-		.contact-navbar {
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .contact-section {
+    height: 90vh; } }
 
-		}
-
-		.contact-navbar ul {
-			border-bottom: 1px solid black;
-			position: relative;
-			top: -3rem;
-		}
-
-		.contact-navbar ul li {
-			display: inline-block;
-		}
-
-		.contact-navbar ul li:first-child {
-			/*position: absolute;*/
-		}
-
-		.contact-navbar .nav-brand {
-			bottom: -1.75rem;
-			font-size: 4rem;
-			margin-bottom: 0rem;
-			padding-left: 0rem;
-			position: relative;
-		}
-
-		.contact-navbar .nav-link {
-			padding-left: 1rem;
-			position: relative;
-			bottom: -4.65rem;
-		}
-		
-		.contact-navbar ul {
-			border-bottom: 1px solid black;
-			position: relative;
-			top: -3rem;
-		}
-
-		.contact-section {
-			height: 100vh;
-		}
-
-
-
-
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .contact-section {
+    height: 90vh; } }
