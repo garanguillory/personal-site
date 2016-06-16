@@ -151,7 +151,8 @@ a:hover {
 
 .technologies li {
   display: inline-block;
-  margin-bottom: 0rem; }
+  margin-bottom: 0rem;
+  margin-right: 0.5rem; }
 
 /* ------- contact -------- */
 .contact-navbar ul {
