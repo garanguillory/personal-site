@@ -4,7 +4,7 @@ angular
 	.directive("projects",['projectsService', '$http', '$interval', function(projectsService, $http, $interval){
 		return {
 			restrict: 'AE',
-			templateUrl: "app/components/projects/projects.view.html",
+			templateUrl: "src/app/components/projects/projects.view.html",
 			link: function(scope, element, attrs, controller){
 
 				var rotate;
