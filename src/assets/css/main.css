@@ -198,9 +198,24 @@ a:hover {
 .contact-section {
   height: 100vh; }
 
+.contact-description span {
+  display: inline-block;
+  transition: all .4s ease-in-out; }
+  .contact-description span:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25); }
+
 .contact-icons li {
   display: inline-block;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+  transition: all .5s ease-in-out; }
+  .contact-icons li:hover {
+    -webkit-transform: scale(1.75);
+    -moz-transform: scale(1.75);
+    -o-transform: scale(1.75);
+    transform: scale(1.75); }
 
 /* ------- games -------- */
 /* Larger than mobile */
