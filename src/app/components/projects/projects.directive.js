@@ -39,11 +39,12 @@ angular
 			scope: {
 				title: '@',
 				images: '=',
-				technologies: '='
+				technologies: '=',
+				url: '@'
 			},
 			controller: function($scope){
 				// console.log('my title', $scope.title, $scope.images);
-			 	
+
 			}
 		};
 }]);
