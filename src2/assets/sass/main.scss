@@ -1,0 +1,83 @@
+body {
+	background: url(../images/lsu_victory.jpg) no-repeat center center fixed;
+	// background-repeat: no-repeat;
+ 	// background-attachment: fixed;
+  // background-position: 30% 20%; 
+  background-size: cover;
+}
+
+.bg {
+	// height: 100vh;
+}
+
+ul {
+	padding-left: 0em;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+nav {
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	height: 4em;
+
+	a {
+		color: white;
+	}
+}
+
+.navbar-list {
+	float: right;
+
+	li {
+		display: inline-block;
+		margin-right: 1em;
+
+		&:last-child {
+			margin-right: 0em;
+		}
+	}
+}
+
+.welcome {
+	// background: url(../images/lsu_victory.jpg) no-repeat center center fixed;
+	// background-size: cover;
+	color: white;
+	height: 100vh;
+	text-align: center;
+	transform: translateY(25%);
+}
+
+.hola {
+	background: white;
+	height: 100vh;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
