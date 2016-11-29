@@ -33,6 +33,12 @@ nav {
   height: 100vh;
   text-align: center;
   transform: translateY(25%); }
+  .welcome h1, .welcome p {
+    transition-property: color;
+    transition-duration: 2s; }
+    .welcome h1:hover, .welcome p:hover {
+      transition-duration: 1s;
+      color: red; }
 
 .hola {
   background: white;

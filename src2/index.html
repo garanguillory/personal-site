@@ -10,6 +10,10 @@
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	  crossorigin="anonymous"></script>
 	<!-- <script src="javascript/jquery.interactive_bg.js"></script> -->
+	<script
+  src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+  crossorigin="anonymous"></script>
 </head>
 <body>
 	<!-- <div class="bg" data-ibg-bg="./assets/images/lsu_victory.jpg"> -->
@@ -42,5 +46,28 @@
 		</div>
 	<!-- </div> -->
 	<!-- <script src="javascript/animate_background.js"></script> -->
+	<script>
+		
+		// $("p").hover(function(){
+		//     $(this).css("background-color", "yellow").fadeIn(1000);
+		//     }, function(){
+		//     $(this).css("background-color", "inherit");
+		// });
+
+		$("p").hover(
+			function(){
+		    $(this).animate({ backgroundColor: "#f56226" }, 1000);
+		  }, 
+		  function(){
+		  	$(this).animate({ backgroundColor: "transparent" }, "slow");
+			}
+		);
+	</script>
 </body>
 </html>
+
+
+
+
+
+
