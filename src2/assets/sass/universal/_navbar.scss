@@ -1,0 +1,31 @@
+
+
+nav {
+	background: rgba(0, 0, 0, 0.3);
+	color: $yellow;
+	height: 4em;
+
+	.title {
+		line-height: 2em;
+	}
+
+
+	.navbar-list {
+		float: right;
+		line-height: 4em;
+		margin-right: 1em;
+
+		li {
+			display: inline-block;
+			margin-right: 1em;
+
+			a {
+				color: $yellow;
+			}
+
+			&:last-child {
+				margin-right: 0em;
+			}
+		}
+	}
+}

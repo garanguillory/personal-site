@@ -1,0 +1,32 @@
+
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.one {
+	-webkit-animation-delay: 0.4s;
+	-moz-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+.two {
+	-webkit-animation-delay: 1.7s;
+	-moz-animation-delay: 1.7s;
+	animation-delay: 1.7s;
+}
+
+.three {
+	-webkit-animation-delay: 2.3s;
+	-moz-animation-delay: 2.3s;
+	animation-delay: 2.3s;
+}
+
+.four {
+	-webkit-animation-delay: 3.3s;
+	-moz-animation-delay: 3.3s;
+	animation-delay: 3.3s;
+}
