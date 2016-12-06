@@ -73,6 +73,52 @@
   -moz-animation-delay: 3.3s;
   animation-delay: 3.3s; }
 
+@-webkit-keyframes frontend-image-transition {
+  0%, 100% {
+    background: url("../images/javascript.svg") no-repeat;
+    background-size: 200px 200px; }
+  20% {
+    background: url("../images/jquery.svg") no-repeat;
+    background-size: 200px 200px; }
+  40% {
+    background: url("../images/angular.svg") no-repeat;
+    background-size: 200px 200px; }
+  60% {
+    background: url("../images/react.svg") no-repeat;
+    background-size: 200px 200px; }
+  80% {
+    background: url("../images/redux.svg") no-repeat;
+    background-size: 200px 200px; } }
+
+.frontend-image {
+  animation: frontend-image-transition 15s linear infinite;
+  -moz-animation: frontend-image-transition 15s linear infinite;
+  -webkit-animation: frontend-image-transition 15s linear infinite;
+  -o-animation: frontend-image-transition 15s linear infinite; }
+
+@-webkit-keyframes backend-image-transition {
+  0%, 100% {
+    background: url("../images/node.svg") no-repeat;
+    background-size: 200px 200px; }
+  20% {
+    background: url("../images/express.svg") no-repeat;
+    background-size: 200px 200px; }
+  40% {
+    background: url("../images/mongodb.svg") no-repeat;
+    background-size: 200px 200px; }
+  60% {
+    background: url("../images/postgresql.svg") no-repeat;
+    background-size: 200px 200px; }
+  80% {
+    background: url("../images/postgresql.svg") no-repeat;
+    background-size: 200px 200px; } }
+
+.backend-image {
+  animation: backend-image-transition 10s linear infinite;
+  -moz-animation: backend-image-transition 10s linear infinite;
+  -webkit-animation: backend-image-transition 10s linear infinite;
+  -o-animation: backend-image-transition 10s linear infinite; }
+
 ul {
   padding-left: 0em; }
   ul li {
@@ -166,6 +212,10 @@ nav {
   background: white;
   height: 100vh;
   text-align: center; }
+  .hola .doing {
+    color: #461D7C;
+    margin-top: 25vh;
+    margin-bottom: 15vh; }
   .hola .hola-image, .hola .build-image {
     border: 4px solid #FDD023;
     border-radius: 50%;
@@ -193,7 +243,7 @@ nav {
         text-align: justify; }
     .hola .build-text {
       margin-top: 2em; }
-    .hola .build-image {
+    .hola .build-image, .hola .frontend-image, .hola .backend-image {
       float: none; } }
   @media only screen and (max-width: 768px) {
     .hola p {
@@ -206,5 +256,9 @@ nav {
         text-align: justify; }
     .hola .build-text {
       margin-top: 3em; }
-    .hola .build-image {
+    .hola .build-image, .hola .frontend-image, .hola .backend-image {
       float: none; } }
+
+#i-can-help {
+  height: 100vh;
+  text-align: center; }
