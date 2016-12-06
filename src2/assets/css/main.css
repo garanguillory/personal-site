@@ -84,7 +84,6 @@ a {
     text-decoration: none; }
 
 nav {
-  background: rgba(0, 0, 0, 0.3);
   color: #FDD023;
   height: 3em; }
   nav .title {
@@ -125,7 +124,7 @@ nav {
   height: 100vh;
   position: relative;
   text-align: center;
-  top: 15vh;
+  top: 20vh;
   z-index: 2; }
   .welcome .name {
     font-size: 8em; }
@@ -139,7 +138,7 @@ nav {
       color: #FDD023; }
   @media only screen and (max-width: 480px) {
     .welcome {
-      top: 10vh; }
+      top: 25vh; }
       .welcome .name {
         font-size: 4em; }
       .welcome .profession {
@@ -148,7 +147,7 @@ nav {
 .more-below {
   -webkit-animation: pulse 3s linear infinite;
   animation: pulse 3s linear infinite;
-  bottom: 3em;
+  bottom: 0.5em;
   color: white;
   left: 48%;
   position: absolute;
@@ -161,21 +160,51 @@ nav {
     color: #FDD023; }
   @media only screen and (max-width: 480px) {
     .more-below {
-      bottom: 5em; } }
+      bottom: 2em; } }
 
 .hola {
   background: white;
   height: 100vh;
   text-align: center; }
-  .hola .hola-image {
+  .hola .hola-image, .hola .build-image {
     border: 4px solid #FDD023;
     border-radius: 50%;
     height: 200px;
     margin-bottom: 2em;
     margin-top: 4em;
     width: 200px; }
+  .hola .build {
+    text-align: justify; }
+  .hola .build-text {
+    margin-top: 4em; }
   .hola h4 {
     color: #461D7C; }
   .hola p {
     color: #461D7C;
     font-size: 1.5em; }
+  @media only screen and (max-width: 480px) {
+    .hola p {
+      font-size: 1em; }
+    .hola .build {
+      text-align: center; }
+      .hola .build h4 {
+        text-align: center; }
+      .hola .build p {
+        text-align: justify; }
+    .hola .build-text {
+      margin-top: 2em; }
+    .hola .build-image {
+      float: none; } }
+  @media only screen and (max-width: 768px) {
+    .hola p {
+      font-size: 1em; }
+    .hola .build {
+      text-align: center; }
+      .hola .build h4 {
+        text-align: center; }
+      .hola .build p {
+        text-align: justify; }
+    .hola .build-text {
+      margin-top: 3em; }
+    .hola .build-image {
+      float: none; } }

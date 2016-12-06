@@ -24,7 +24,7 @@ a {
 }
 
 nav {
-	background: rgba(0, 0, 0, 0.3);
+	// background: rgba(70, 29, 124, 0.3);
 	color: $yellow;
 	height: 3em;
 
@@ -80,7 +80,7 @@ nav {
 	height: 100vh;
 	position: relative;
 	text-align: center;
-	top: 15vh;
+	top: 20vh;
 	// transform: translateY(25%);
 	z-index: 2;
 	
@@ -102,7 +102,7 @@ nav {
 	}
 	
 	@media only screen and (max-width : 480px) {
-		top: 10vh;
+		top: 25vh;
 
 	  .name {
 	  	font-size: 4em;
@@ -116,7 +116,7 @@ nav {
 .more-below {
 	-webkit-animation: pulse 3s linear infinite;
 	animation: pulse 3s linear infinite;
-	bottom: 3em;
+	bottom: 0.5em;
 	color: white;
   left: 48%;
   position: absolute;
@@ -131,7 +131,7 @@ nav {
 	}
 
 	@media only screen and (max-width : 480px) {
-		bottom: 5em;
+		bottom: 2em;
 	}
 	
 }
@@ -141,7 +141,7 @@ nav {
 	height: 100vh;
 	text-align: center;
 
-	.hola-image {
+	.hola-image, .build-image {
 		border: 4px solid $yellow;
 		border-radius: 50%;
 		height: 200px;
@@ -149,12 +149,71 @@ nav {
 		margin-top: 4em;
 		width: 200px;
 	}
+	.build {
+		text-align: justify;
+	}
+
+	.build-text {
+		margin-top: 4em;
+	}
+
 	h4 {
 		color: $purple;
 	}
 	p {
 		color: $purple;
 		font-size: 1.5em;
+	}
+
+	@media only screen and (max-width : 480px) {
+		
+		p {
+			font-size: 1em;
+		}
+
+		.build {
+			text-align: center;
+
+			h4 {
+				text-align: center;
+			}
+			p {
+				text-align: justify;
+			}
+		}
+
+		.build-text {
+			margin-top: 2em;
+		}
+
+		.build-image {
+			float: none;
+		}
+	}
+
+	@media only screen and (max-width : 768px) {
+		p {
+			font-size: 1em;
+		}
+
+		.build {
+			text-align: center;
+			
+			h4 {
+				text-align: center;
+			}
+			p {
+				text-align: justify;
+			}
+		}
+
+		.build-text {
+			margin-top: 3em;
+		}
+
+		.build-image {
+			float: none;
+		}
 	}
 }
 
