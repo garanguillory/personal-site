@@ -64,7 +64,7 @@
 	-o-animation: backend-image-transition 10s linear infinite; 
 }
 
-
+// note cards image transistion 
 @-webkit-keyframes note-cards-image-transition
 	{
 		0%,100% {
@@ -95,3 +95,105 @@
 	-webkit-animation: note-cards-image-transition 15s linear infinite; 
 	-o-animation: note-cards-image-transition 15s linear infinite; 
 }
+
+
+// weather image transistion 
+@-webkit-keyframes weather-image-transition
+	{
+		0%,100% {
+			background: url("../images/weather-forecast/weather-forecast-view-0.jpg") no-repeat;
+			background-size: cover;
+		}
+		25% {
+			background: url("../images/weather-forecast/weather-forecast-view-1.jpg") no-repeat;
+			background-size: cover;
+		}
+		50% {
+			background: url("../images/weather-forecast/weather-forecast-view-2.jpg") no-repeat;
+			background-size: cover;
+		}
+		75% {
+			background: url("../images/weather-forecast/weather-forecast-view-3.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.weather-image {
+	animation: weather-image-transition 15s linear infinite;
+	-moz-animation: weather-image-transition 15s linear infinite; 
+	-webkit-animation: weather-image-transition 15s linear infinite; 
+	-o-animation: weather-image-transition 15s linear infinite; 
+}
+
+// state-flag-quiz
+@-webkit-keyframes state-flag-quiz-image-transition
+	{
+		0%,100% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-instructions-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		12.5% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-unselected-question-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		25% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-selected-question-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		37.5% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-hover-question-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		50% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-correct-answer-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		62.5% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-incorrect-answer-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		75% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-results-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		87.5% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-results-new-game-view.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.state-flag-quiz-image {
+	animation: state-flag-quiz-image-transition 15s linear infinite;
+	-moz-animation: state-flag-quiz-image-transition 15s linear infinite; 
+	-webkit-animation: state-flag-quiz-image-transition 15s linear infinite; 
+	-o-animation: state-flag-quiz-image-transition 15s linear infinite; 
+}
+
+// to-do image transistion 
+@-webkit-keyframes to-do-image-transition
+	{
+		0%,100% {
+			background: url("../images/to-do-list/to-do-list-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		50% {
+			background: url("../images/to-do-list/to-do-list-view-delete.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.to-do-image {
+	animation: to-do-image-transition 5s linear infinite;
+	-moz-animation: to-do-image-transition 5s linear infinite; 
+	-webkit-animation: to-do-image-transition 5s linear infinite; 
+	-o-animation: to-do-image-transition 5s linear infinite; 
+}
+
+
+
+
+
+
+
+
+
