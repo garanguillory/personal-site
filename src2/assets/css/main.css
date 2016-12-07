@@ -291,12 +291,14 @@ nav {
         border-color: #FDD023;
         background: #461D7C;
         color: white; }
+    @media only screen and (max-width: 480px) {
+      .helping .helping-text h4 {
+        font-size: 1em; } }
 
 .bottom {
   bottom: 0px;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%); }
+  position: relative;
+  text-align: center; }
   .bottom li {
     display: inline-block;
     margin-right: 3em; }
@@ -309,3 +311,6 @@ nav {
         transition-duration: 1.5s; }
     .bottom li:last-child {
       margin-right: 0em; }
+    @media only screen and (max-width: 480px) {
+      .bottom li li {
+        margin-right: 0em; } }
