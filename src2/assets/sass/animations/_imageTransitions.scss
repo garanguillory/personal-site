@@ -1,28 +1,28 @@
 
 // front-end image transition
 @-webkit-keyframes frontend-image-transition
-{
-	0%,100% {
-		background: url("../images/javascript.svg") no-repeat;
-		background-size: 200px 200px;
+	{
+		0%,100% {
+			background: url("../images/javascript.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		20% {
+			background: url("../images/jquery.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		40% {
+			background: url("../images/angular.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		60% {
+			background: url("../images/react.svg") no-repeat; 
+			background-size: 200px 200px;
+		}
+		80% {
+			background: url("../images/redux.svg") no-repeat; 
+			background-size: 200px 200px;
+		}
 	}
-	20% {
-		background: url("../images/jquery.svg") no-repeat;
-		background-size: 200px 200px;
-	}
-	40% {
-		background: url("../images/angular.svg") no-repeat;
-		background-size: 200px 200px;
-	}
-	60% {
-		background: url("../images/react.svg") no-repeat; 
-		background-size: 200px 200px;
-	}
-	80% {
-		background: url("../images/redux.svg") no-repeat; 
-		background-size: 200px 200px;
-	}
-}
 
 .frontend-image {
 	animation: frontend-image-transition 15s linear infinite;
@@ -34,32 +34,64 @@
 
 // backend image transition
 @-webkit-keyframes backend-image-transition 
-{
-	0%,100% {
-		background: url("../images/node.svg") no-repeat;
-		background-size: 200px 200px;
+	{
+		0%,100% {
+			background: url("../images/node.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		20% {
+			background: url("../images/express.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		40% {
+			background: url("../images/mongodb.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		60% {
+			background: url("../images/postgresql.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		80% {
+			background: url("../images/postgresql.svg") no-repeat;
+			background-size: 200px 200px;
+		}
 	}
-	20% {
-		background: url("../images/express.svg") no-repeat;
-		background-size: 200px 200px;
-	}
-	40% {
-		background: url("../images/mongodb.svg") no-repeat;
-		background-size: 200px 200px;
-	}
-	60% {
-		background: url("../images/postgresql.svg") no-repeat;
-		background-size: 200px 200px;
-	}
-	80% {
-		background: url("../images/postgresql.svg") no-repeat;
-		background-size: 200px 200px;
-	}
-}
 
 .backend-image {
 	animation: backend-image-transition 10s linear infinite;
 	-moz-animation: backend-image-transition 10s linear infinite; 
 	-webkit-animation: backend-image-transition 10s linear infinite; 
 	-o-animation: backend-image-transition 10s linear infinite; 
+}
+
+
+@-webkit-keyframes note-cards-image-transition
+	{
+		0%,100% {
+			background: url("../images/notecard/notecard-profile-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		20% {
+			background: url("../images/notecard/notecard-deck-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		40% {
+			background: url("../images/notecard/notecard-newdeck-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		60% {
+			background: url("../images/notecard/notecard-editdeck-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		80% {
+			background: url("../images/notecard/notecard-study-view.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.note-cards-image {
+	animation: note-cards-image-transition 15s linear infinite;
+	-moz-animation: note-cards-image-transition 15s linear infinite; 
+	-webkit-animation: note-cards-image-transition 15s linear infinite; 
+	-o-animation: note-cards-image-transition 15s linear infinite; 
 }

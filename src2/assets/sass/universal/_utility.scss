@@ -1,0 +1,17 @@
+
+
+ul {
+	padding-left: 0em;
+
+	li {
+		list-style: none;
+	}
+}
+
+a {
+	text-decoration: none;
+
+	&:hover, &:active, &:visited {
+		text-decoration: none;
+	}
+}

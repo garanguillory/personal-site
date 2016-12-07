@@ -17,61 +17,59 @@
 	  crossorigin="anonymous"></script>
 	</head>
 	<body>
-
-		<section id="welcome">
+		<span id="top"> </span>
+		<section id="work">
 			<div class="container-fluid">
 				<div class="content row">
 				<!-- navbar -->
 					<nav class="navbar navbar-fixed-top">
-						<span class="title">GG</span>
+						<span class="title"><a class="grow-more" href="index.html">GG</a></span>
 						<ul class="navbar-list">
 							<li>
-								<a href="#hola">About</a>
+								<a class="grow" href="index.html">About</a>
 							</li>
 							<li>
-								<a href="work.html">Work</a>
+								<a class="grow" href="#portfolio">Work</a>
 							</li>
 							<li>
-								<a href="#contact">Contact</a>
+								<a class="grow" href="#contact">Contact</a>
 							</li>
 						</ul>
 					</nav>
-					<!-- welcome message -->
+					<!-- work message -->
 						<div class="col-xs-8 offset-xs-2">
-							<div class="welcome animate fadeInUp one">
-								<h1 class="name">I'm Garan</h1>
-								<p class="profession">a web developer</p>
+							<div class="work animate fadeInUp one">
+								<h1 class="description">Work</h1>
+								<!-- <p class="profession">a web developer</p> -->
 							</div>
 						</div>
 						<!-- down caret -->
-					<a href="#hola">
+					<a href="#portfolio">
 						<i class="fa fa-chevron-down fa-2x more-below hidden-xs-down" aria-hidden="true"></i>
 						<i class="fa fa-chevron-down fa more-below hidden-sm-up" aria-hidden="true"></i>
 					</a>
 				</div>
 			</div>
-		</section> <!-- end welcome section -->
+		</section> <!-- end work section -->
 
-		<section id="what-i-do">
+		<section id="portfolio">
 			<div class="container-fluid">
-				<div id="hola" class="hola row">
+				<div id="hola" class="portfolio row">
 					<div class="col-xs-8 offset-xs-2">
-						<img class="hola-image" src="./assets/images/kellandandgaran-min.jpg" alt="">
-						<h4>Hola.</h4>
-						<p>I'm a web developer based in Austin,</br> Texas. I have a passion for web development</br> and love to build mobile and web apps.</p>
+						<img class="portfolio-image-intro" src="./assets/images/kellandandgaran-min.jpg" alt="">
+						<h4>What I've been up to.</h4>
+						<p class="recent-work-text">Here is a selection of some recent work. For more up-to-date work check out my <a class="grow" href="https://github.com/garanguillory" target="_blank" title="Github" href="https://github.com/garanguillory">Github.</a></p>
 					</div>
 
-					<div class="col-xs-10 offset-xs-1 offset-xs-0 doing">
-						<h2>What I can do.</h2>
-					</div>
+					<!-- need a divider here -->
 
 					<div class="col-xs-10 offset-xs-1 offset-xs-0">
 						<div class="build row">
-							<div class="col-sm-12 col-md-4 offset-md-1" id="cf4a">
-								<img class="build-image frontend-image">
+							<div class="col-sm-12 col-md-4 offset-md-1">
+								<img class="note-cards-image">
 							</div>
 							<div class="col-sm-10 offset-sm-1 col-md-6 offset-md-0 build-text">
-								<h4>Furnish a front-end.</h4>
+								<h4>Note Card Application</h4>
 								<p>I work with numerous different technologies on the front end. JavaScript, jQuery, Angular 1.x, React, and Redux - to name a few. I am also fluent in HTML5, CSS3, SASS, and Bootstrap.</p>
 							</div>
 						</div>
@@ -109,17 +107,17 @@
 		</section>
 			<ul id="contact" class="bottom">
 	      <li>
-		      <a href="https://www.linkedin.com/in/garan-guillory" target="_blank" title="Linkedin" href="https://www.linkedin.com/in/garan-guillory">
+		      <a class="grow-more" href="https://www.linkedin.com/in/garan-guillory" target="_blank" title="Linkedin" href="https://www.linkedin.com/in/garan-guillory">
 			      <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
 		      </a>
 	      </li>
 	      <li>
-		      <a href="mailto:garanguillory@gmail.com">
+		      <a class="grow-more" href="mailto:garanguillory@gmail.com">
 		      	<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
 		      </a>
 	      </li>
 	      <li>
-		      <a href="https://github.com/garanguillory" target="_blank" title="Linkedin" href="https://github.com/garanguillory">
+		      <a class="grow-more" href="https://github.com/garanguillory" target="_blank" title="Github" href="https://github.com/garanguillory">
 		      	<i class="fa fa-github fa-2x" aria-hidden="true"></i>
 		      </a>
 	      </li>
