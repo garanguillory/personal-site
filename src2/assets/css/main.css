@@ -126,16 +126,28 @@ ul {
 
 a {
   text-decoration: none; }
-  a:hover {
+  a:hover, a:active, a:visited {
     text-decoration: none; }
 
 nav {
   color: #FDD023;
   height: 3em; }
   nav .title {
-    color: #FDD023; }
+    color: #FDD023;
+    transition-property: color;
+    transition-duration: 3s; }
+    nav .title:hover {
+      color: #461D7C;
+      transition-duration: 1.5s; }
   nav a {
-    color: #FDD023; }
+    color: #FDD023;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 3s; }
+    nav a:hover {
+      color: #461D7C;
+      text-decoration: none;
+      transition-duration: 1.5s; }
   nav .navbar-list {
     float: right; }
     nav .navbar-list li {
@@ -259,6 +271,41 @@ nav {
     .hola .build-image, .hola .frontend-image, .hola .backend-image {
       float: none; } }
 
-#i-can-help {
+.helping {
+  color: #461D7C;
   height: 100vh;
+  position: relative;
   text-align: center; }
+  .helping .helping-text {
+    margin-top: 15vh; }
+    .helping .helping-text h2 {
+      font-size: 3em; }
+    .helping .helping-text h4 {
+      font-size: 2em;
+      margin-top: 2em; }
+    .helping .helping-text .message-me {
+      border-color: #461D7C;
+      color: #461D7C;
+      margin-top: 2em; }
+      .helping .helping-text .message-me:hover {
+        border-color: #FDD023;
+        background: #461D7C;
+        color: white; }
+
+.bottom {
+  bottom: 0px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%); }
+  .bottom li {
+    display: inline-block;
+    margin-right: 3em; }
+    .bottom li a i {
+      color: #461D7C;
+      transition-property: color;
+      transition-duration: 20s; }
+      .bottom li a i:hover {
+        color: #FDD023;
+        transition-duration: 1.5s; }
+    .bottom li:last-child {
+      margin-right: 0em; }

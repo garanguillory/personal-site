@@ -19,7 +19,7 @@ ul {
 a {
 	text-decoration: none;
 
-	&:hover {
+	&:hover, &:active, &:visited {
 		text-decoration: none;
 	}
 }
@@ -31,10 +31,26 @@ nav {
 
 	.title {
 		color: $yellow;
+		transition-property: color;
+		transition-duration: 3s;
+
+		&:hover {
+			color: $purple;
+			transition-duration: 1.5s;
+		}
 	}
 
 	a {
 		color: $yellow;
+		text-decoration: none;
+		transition-property: color;
+		transition-duration: 3s;
+
+		&:hover {
+			color: $purple;
+			text-decoration: none;
+			transition-duration: 1.5s;
+		}
 	}
 
 	.navbar-list {
@@ -226,11 +242,64 @@ nav {
 
 
 
-#i-can-help {
+.helping {
+	color: $purple;
 	height: 100vh;
+	position: relative;
 	text-align: center;
+
+	.helping-text {
+		margin-top: 15vh;
+
+		h2 {
+			font-size: 3em;
+		}
+		h4 {
+			font-size: 2em;
+			margin-top: 2em;
+		}
+		.message-me {
+			border-color: $purple;
+			color: $purple;
+			margin-top: 2em;
+
+			&:hover {
+				border-color: $yellow;
+				background: $purple;
+				color: white;
+			}
+		}
+	}
 }
 
+.bottom {
+	bottom: 0px;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+
+	li {
+		display: inline-block;
+		margin-right: 3em;
+
+		a {
+			i {
+				color: $purple;
+				transition-property: color;
+				transition-duration: 20s;
+
+				&:hover {
+					color: $yellow;
+					transition-duration: 1.5s;
+				}
+			}
+		}
+
+		&:last-child {
+			margin-right: 0em;
+		}
+	}
+}
 
 
 
