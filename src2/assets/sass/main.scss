@@ -238,7 +238,9 @@ nav {
 		text-align: justify;
 	}
 
-	.note-cards-image, .weather-image, .state-flag-quiz-image, .to-do-image {
+	.note-cards-image, .weather-image,
+	.state-flag-quiz-image, .to-do-image,
+	.reddit-clone-image, .employee-scheduling-image {
 		border: 4px solid $yellow;
 		box-sizing: border-box;
 		// border-radius: 50%; 

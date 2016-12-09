@@ -190,10 +190,70 @@
 }
 
 
+// reddit-clone image transistion 
+@-webkit-keyframes reddit-clone-image-transition
+	{
+		0%,100% {
+			background: url("../images/reddit-clone/reddit-clone-comment-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		33.33% {
+			background: url("../images/reddit-clone/reddit-clone-home-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		66.66% {
+			background: url("../images/reddit-clone/reddit-clone-newpost-view.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.reddit-clone-image {
+	animation: reddit-clone-image-transition 5s linear infinite;
+	-moz-animation: reddit-clone-image-transition 5s linear infinite; 
+	-webkit-animation: reddit-clone-image-transition 5s linear infinite; 
+	-o-animation: reddit-clone-image-transition 5s linear infinite; 
+}
 
 
+// employee-scheduling image transition
+@-webkit-keyframes employee-scheduling-image-transition
+	{
+		0%,100% {
+			background: url("../images/employee-scheduling/employee-scheduling-landing-page-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		14.2857% {
+			background: url("../images/employee-scheduling/employee-scheduling-options-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		28.5714% {
+			background: url("../images/employee-scheduling/employee-scheduling-signup-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		42.8571% {
+			background: url("../images/employee-scheduling/employee-scheduling-login-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		57.1428% {
+			background: url("../images/employee-scheduling/employee-scheduling-individual-employee-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		71.4285% {
+			background: url("../images/employee-scheduling/employee-scheduling-calendar-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		85.7142% {
+			background: url("../images/employee-scheduling/employee-scheduling-addbulk-view.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
 
-
+.employee-scheduling-image {
+	animation: employee-scheduling-image-transition 30s linear infinite;
+	-moz-animation: employee-scheduling-image-transition 30s linear infinite; 
+	-webkit-animation: employee-scheduling-image-transition 30s linear infinite; 
+	-o-animation: employee-scheduling-image-transition 30s linear infinite; 
+}
 
 
 
