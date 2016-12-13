@@ -9,7 +9,7 @@
 // @import "animations/fadeInDown";
 // @import "animations/fadeIn";
 // @import "animations/fadeInLeft";
-// @import "animations/fadeInRight";
+// @import "animations/fadeInRight"; 
 
 
 .content {
@@ -159,9 +159,11 @@
 		.build-text {
 			margin-top: 2em;
 		}
-		// removed .build-image
-		.frontend-image, .backend-image, .note-cards-image {
-			float: none;
+		
+		.frontend-image, .backend-image {
+			// display: block;
+			// float: left;
+			// text-align: center;
 		}
 	}
 
@@ -184,10 +186,10 @@
 		.build-text {
 			margin-top: 3em;
 		}
-		// removed .build-image
-		.frontend-image, .backend-image, .note-cards-image {
-			float: none;
-		}
+		
+		// .frontend-image, .backend-image {
+		// 	float: none;
+		// }
 	}
 } // end .hola .portfolio
 
@@ -196,13 +198,10 @@
 	p {
 		text-align: justify;
 	}
-
-	.note-cards-image, .weather-image,
-	.state-flag-quiz-image, .to-do-image,
-	.reddit-clone-image, .employee-scheduling-image {
+ 
+	.portfolio-piece-image {
 		border: 4px solid $yellow;
-		box-sizing: border-box;
-		// border-radius: 50%; 
+		// box-sizing: border-box;
 		height: 200px;
 		margin-bottom: 2em;
 		margin-top: 4em;

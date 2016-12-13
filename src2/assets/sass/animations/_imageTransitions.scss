@@ -2,7 +2,7 @@
 // front-end image transition
 @-webkit-keyframes frontend-image-transition
 	{
-		0%,100% {
+		0% {
 			background: url("../images/javascript.svg") no-repeat;
 			background-size: 200px 200px;
 		}
@@ -22,13 +22,19 @@
 			background: url("../images/redux.svg") no-repeat; 
 			background-size: 200px 200px;
 		}
+		100% {
+			background: url("../images/javascript.svg") no-repeat;
+			background-size: 200px 200px;
+		}
 	}
 
 .frontend-image {
-	animation: frontend-image-transition 15s linear infinite;
+	// animation: frontend-image-transition 15s linear infinite;
 	-moz-animation: frontend-image-transition 15s linear infinite; 
 	-webkit-animation: frontend-image-transition 15s linear infinite; 
 	-o-animation: frontend-image-transition 15s linear infinite; 
+	animation: frontend-image-transition 15s linear infinite;
+	background-size: 200px 200px;
 }
 
 
@@ -58,16 +64,18 @@
 	}
 
 .backend-image {
-	animation: backend-image-transition 10s linear infinite;
+	// animation: backend-image-transition 10s linear infinite;
 	-moz-animation: backend-image-transition 10s linear infinite; 
 	-webkit-animation: backend-image-transition 10s linear infinite; 
-	-o-animation: backend-image-transition 10s linear infinite; 
+	-o-animation: backend-image-transition 10s linear infinite;
+	animation: backend-image-transition 10s linear infinite;
+	background-size: 200px 200px; 
 }
 
 // note cards image transistion 
 @-webkit-keyframes note-cards-image-transition
 	{
-		0%,100% {
+		0% {
 			background: url("../images/notecard/notecard-profile-view.jpg") no-repeat;
 			background-size: cover;
 		}
@@ -87,13 +95,19 @@
 			background: url("../images/notecard/notecard-study-view.jpg") no-repeat;
 			background-size: cover;
 		}
+		100% {
+			background: url("../images/notecard/notecard-profile-view.jpg") no-repeat;
+			background-size: cover;
+		}
 	}
 
 .note-cards-image {
-	animation: note-cards-image-transition 15s linear infinite;
+	// animation: note-cards-image-transition 15s linear infinite;
 	-moz-animation: note-cards-image-transition 15s linear infinite; 
 	-webkit-animation: note-cards-image-transition 15s linear infinite; 
-	-o-animation: note-cards-image-transition 15s linear infinite; 
+	-o-animation: note-cards-image-transition 15s linear infinite;
+	animation: note-cards-image-transition 15s linear infinite;
+	background-size: cover;
 }
 
 
@@ -123,6 +137,7 @@
 	-moz-animation: weather-image-transition 15s linear infinite; 
 	-webkit-animation: weather-image-transition 15s linear infinite; 
 	-o-animation: weather-image-transition 15s linear infinite; 
+	background-size: cover;
 }
 
 // state-flag-quiz
@@ -167,6 +182,7 @@
 	-moz-animation: state-flag-quiz-image-transition 15s linear infinite; 
 	-webkit-animation: state-flag-quiz-image-transition 15s linear infinite; 
 	-o-animation: state-flag-quiz-image-transition 15s linear infinite; 
+	background-size: cover;
 }
 
 // to-do image transistion 
@@ -187,6 +203,7 @@
 	-moz-animation: to-do-image-transition 5s linear infinite; 
 	-webkit-animation: to-do-image-transition 5s linear infinite; 
 	-o-animation: to-do-image-transition 5s linear infinite; 
+	background-size: cover;
 }
 
 
@@ -212,6 +229,7 @@
 	-moz-animation: reddit-clone-image-transition 5s linear infinite; 
 	-webkit-animation: reddit-clone-image-transition 5s linear infinite; 
 	-o-animation: reddit-clone-image-transition 5s linear infinite; 
+	background-size: cover;
 }
 
 
@@ -253,6 +271,7 @@
 	-moz-animation: employee-scheduling-image-transition 30s linear infinite; 
 	-webkit-animation: employee-scheduling-image-transition 30s linear infinite; 
 	-o-animation: employee-scheduling-image-transition 30s linear infinite; 
+	background-size: cover;
 }
 
 
