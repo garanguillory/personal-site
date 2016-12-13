@@ -1,0 +1,278 @@
+
+// front-end image transition
+@-webkit-keyframes frontend-image-transition
+	{
+		0% {
+			background: url("../images/javascript.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		20% {
+			background: url("../images/jquery.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		40% {
+			background: url("../images/angular.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		60% {
+			background: url("../images/react.svg") no-repeat; 
+			background-size: 200px 200px;
+		}
+		80% {
+			background: url("../images/redux.svg") no-repeat; 
+			background-size: 200px 200px;
+		}
+		100% {
+			background: url("../images/javascript.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+	}
+
+.frontend-image {
+	// animation: frontend-image-transition 15s linear infinite;
+	-moz-animation: frontend-image-transition 15s linear infinite; 
+	-webkit-animation: frontend-image-transition 15s linear infinite; 
+	-o-animation: frontend-image-transition 15s linear infinite; 
+	animation: frontend-image-transition 15s linear infinite;
+	background-size: 200px 200px;
+}
+
+
+// backend image transition
+@-webkit-keyframes backend-image-transition 
+	{
+		0%,100% {
+			background: url("../images/node.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		20% {
+			background: url("../images/express.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		40% {
+			background: url("../images/mongodb.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		60% {
+			background: url("../images/postgresql.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+		80% {
+			background: url("../images/postgresql.svg") no-repeat;
+			background-size: 200px 200px;
+		}
+	}
+
+.backend-image {
+	// animation: backend-image-transition 10s linear infinite;
+	-moz-animation: backend-image-transition 10s linear infinite; 
+	-webkit-animation: backend-image-transition 10s linear infinite; 
+	-o-animation: backend-image-transition 10s linear infinite;
+	animation: backend-image-transition 10s linear infinite;
+	background-size: 200px 200px; 
+}
+
+// note cards image transistion 
+@-webkit-keyframes note-cards-image-transition
+	{
+		0% {
+			background: url("../images/notecard/notecard-profile-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		20% {
+			background: url("../images/notecard/notecard-deck-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		40% {
+			background: url("../images/notecard/notecard-newdeck-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		60% {
+			background: url("../images/notecard/notecard-editdeck-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		80% {
+			background: url("../images/notecard/notecard-study-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		100% {
+			background: url("../images/notecard/notecard-profile-view.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.note-cards-image {
+	// animation: note-cards-image-transition 15s linear infinite;
+	-moz-animation: note-cards-image-transition 15s linear infinite; 
+	-webkit-animation: note-cards-image-transition 15s linear infinite; 
+	-o-animation: note-cards-image-transition 15s linear infinite;
+	animation: note-cards-image-transition 15s linear infinite;
+	background-size: cover;
+}
+
+
+// weather image transistion 
+@-webkit-keyframes weather-image-transition
+	{
+		0%,100% {
+			background: url("../images/weather-forecast/weather-forecast-view-0.jpg") no-repeat;
+			background-size: cover;
+		}
+		25% {
+			background: url("../images/weather-forecast/weather-forecast-view-1.jpg") no-repeat;
+			background-size: cover;
+		}
+		50% {
+			background: url("../images/weather-forecast/weather-forecast-view-2.jpg") no-repeat;
+			background-size: cover;
+		}
+		75% {
+			background: url("../images/weather-forecast/weather-forecast-view-3.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.weather-image {
+	animation: weather-image-transition 15s linear infinite;
+	-moz-animation: weather-image-transition 15s linear infinite; 
+	-webkit-animation: weather-image-transition 15s linear infinite; 
+	-o-animation: weather-image-transition 15s linear infinite; 
+	background-size: cover;
+}
+
+// state-flag-quiz
+@-webkit-keyframes state-flag-quiz-image-transition
+	{
+		0%,100% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-instructions-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		12.5% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-unselected-question-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		25% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-selected-question-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		37.5% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-hover-question-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		50% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-correct-answer-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		62.5% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-incorrect-answer-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		75% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-results-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		87.5% {
+			background: url("../images/state-flag-quiz/state-flag-quiz-results-new-game-view.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.state-flag-quiz-image {
+	animation: state-flag-quiz-image-transition 15s linear infinite;
+	-moz-animation: state-flag-quiz-image-transition 15s linear infinite; 
+	-webkit-animation: state-flag-quiz-image-transition 15s linear infinite; 
+	-o-animation: state-flag-quiz-image-transition 15s linear infinite; 
+	background-size: cover;
+}
+
+// to-do image transistion 
+@-webkit-keyframes to-do-image-transition
+	{
+		0%,100% {
+			background: url("../images/to-do-list/to-do-list-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		50% {
+			background: url("../images/to-do-list/to-do-list-view-delete.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.to-do-image {
+	animation: to-do-image-transition 5s linear infinite;
+	-moz-animation: to-do-image-transition 5s linear infinite; 
+	-webkit-animation: to-do-image-transition 5s linear infinite; 
+	-o-animation: to-do-image-transition 5s linear infinite; 
+	background-size: cover;
+}
+
+
+// reddit-clone image transistion 
+@-webkit-keyframes reddit-clone-image-transition
+	{
+		0%,100% {
+			background: url("../images/reddit-clone/reddit-clone-comment-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		33.33% {
+			background: url("../images/reddit-clone/reddit-clone-home-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		66.66% {
+			background: url("../images/reddit-clone/reddit-clone-newpost-view.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.reddit-clone-image {
+	animation: reddit-clone-image-transition 5s linear infinite;
+	-moz-animation: reddit-clone-image-transition 5s linear infinite; 
+	-webkit-animation: reddit-clone-image-transition 5s linear infinite; 
+	-o-animation: reddit-clone-image-transition 5s linear infinite; 
+	background-size: cover;
+}
+
+
+// employee-scheduling image transition
+@-webkit-keyframes employee-scheduling-image-transition
+	{
+		0%,100% {
+			background: url("../images/employee-scheduling/employee-scheduling-landing-page-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		14.2857% {
+			background: url("../images/employee-scheduling/employee-scheduling-options-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		28.5714% {
+			background: url("../images/employee-scheduling/employee-scheduling-signup-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		42.8571% {
+			background: url("../images/employee-scheduling/employee-scheduling-login-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		57.1428% {
+			background: url("../images/employee-scheduling/employee-scheduling-individual-employee-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		71.4285% {
+			background: url("../images/employee-scheduling/employee-scheduling-calendar-view.jpg") no-repeat;
+			background-size: cover;
+		}
+		85.7142% {
+			background: url("../images/employee-scheduling/employee-scheduling-addbulk-view.jpg") no-repeat;
+			background-size: cover;
+		}
+	}
+
+.employee-scheduling-image {
+	animation: employee-scheduling-image-transition 30s linear infinite;
+	-moz-animation: employee-scheduling-image-transition 30s linear infinite; 
+	-webkit-animation: employee-scheduling-image-transition 30s linear infinite; 
+	-o-animation: employee-scheduling-image-transition 30s linear infinite; 
+	background-size: cover;
+}
+
+
+

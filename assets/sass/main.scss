@@ -1,0 +1,306 @@
+@import "animations/fadeInUp";
+@import "animations/pulse";
+@import "animations/grow";
+@import "animations/triggerAndDelays";
+@import "animations/imageTransitions";
+@import "universal/colors";
+@import "universal/utility";
+@import "universal/navbar";
+// @import "animations/fadeInDown";
+// @import "animations/fadeIn";
+// @import "animations/fadeInLeft";
+// @import "animations/fadeInRight"; 
+
+
+.content {
+  position: relative;
+  background: $purple;
+  overflow: hidden;
+}
+
+.content:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+    background: url(../images/lsu_victory.jpg) no-repeat center center fixed;
+    background-repeat: no-repeat;
+    // background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+.welcome, .work {
+	color: white;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+	top: 20vh;
+	// transform: translateY(25%);
+	z-index: 2;
+	
+	.name, .description {
+		font-size: 8em;
+	}
+
+	.profession {
+		font-size: 4em;
+	}
+	.name, .description, .profession {
+	  transition-property: color;
+	  transition-duration: 20s;
+
+		&:hover {
+		  transition-duration: 1s;
+		  color: $yellow;
+		}
+	}
+	
+	@media only screen and (max-width : 480px) {
+		top: 25vh;
+
+	  .name, .description {
+	  	font-size: 4em;
+	  }   
+	  .profession {
+	  	font-size: 1em;
+	  }
+	}
+}
+
+// work page
+
+.work {
+	height: 60vh;
+
+	@media only screen and (max-width : 480px) {
+		height: 80vh;
+	}
+}
+
+.more-below {
+	-webkit-animation: pulse 3s linear infinite;
+	animation: pulse 3s linear infinite;
+	bottom: 0.5em;
+	color: white;
+  left: 48%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+	transition-property: color;
+	transition-duration: 20s;
+  z-index: 2;
+
+	&:hover {
+	  transition-duration: 1s;
+	  color: $yellow;
+	}
+
+	@media only screen and (max-width : 480px) {
+		bottom: 2em;
+	}
+}
+
+.hola, .portfolio {
+	background: white;
+	height: 100vh;
+	text-align: center;
+
+	.doing {
+		color: $purple;
+		margin-top: 25vh;
+		margin-bottom: 15vh;
+	}
+
+	.hola-image, .portfolio-image-intro, .build-image {
+		border: 4px solid $yellow;
+		border-radius: 50%;
+		height: 200px;
+		margin-bottom: 2em;
+		margin-top: 4em;
+		width: 200px;
+	}
+	.build {
+		text-align: justify;
+	}
+
+	.build-text {
+		margin-top: 4em;
+	}
+
+	h4 {
+		color: $purple;
+	}
+	p {
+		color: $purple;
+		font-size: 1.5em;
+	}
+
+	@media only screen and (max-width : 480px) {
+		p {
+			font-size: 1em;
+		}
+		.build {
+			text-align: center;
+			h4 {
+				text-align: center;
+			}
+			p {
+				text-align: justify;
+			}
+		}
+
+		.build-text {
+			margin-top: 2em;
+		}
+		
+		.frontend-image, .backend-image {
+			// display: block;
+			// float: left;
+			// text-align: center;
+		}
+	}
+
+	@media only screen and (max-width : 768px) {
+		p {
+			font-size: 1em;
+		}
+
+		.build {
+			text-align: center;
+
+			h4 {
+				text-align: center;
+			}
+			p {
+				text-align: justify;
+			}
+		}
+
+		.build-text {
+			margin-top: 3em;
+		}
+		
+		// .frontend-image, .backend-image {
+		// 	float: none;
+		// }
+	}
+} // end .hola .portfolio
+
+.portfolio {
+
+	p {
+		text-align: justify;
+	}
+ 
+	.portfolio-piece-image {
+		border: 4px solid $yellow;
+		// box-sizing: border-box;
+		height: 200px;
+		margin-bottom: 2em;
+		margin-top: 4em;
+		width: 100%;
+	}
+}
+
+#i-can-help {
+	margin-top: 10vh;
+
+	@media only screen and (max-width : 480px) {
+		margin-top: 50vh;
+	}
+}
+
+#welcome, #what-i-do,
+#portfolio, #i-can-help {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+
+.helping {
+	color: $purple;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+
+	.helping-text {
+		margin-top: 15vh;
+
+		h2 {
+			font-size: 3em;
+		}
+		h4 {
+			font-size: 2em;
+			margin-top: 2em;
+		}
+		.message-me {
+			border-color: $purple;
+			color: $purple;
+			margin-top: 2em;
+
+			&:hover {
+				border-color: $yellow;
+				background: $purple;
+				color: white;
+			}
+		}
+		@media only screen and (max-width : 480px) {
+			h2 {
+				// font-size: 1.5em;
+			}
+			h4 {
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+.bottom {
+	bottom: 0px;
+	position: relative;
+	text-align: center;
+	// transform: translate(-50%,-50%);
+
+	li {
+		display: inline-block;
+		margin-right: 3em;
+
+		a {
+			i {
+				color: $purple;
+				transition-property: color;
+				transition-duration: 20s;
+
+				&:hover {
+					color: $yellow;
+					transition-duration: 1.5s;
+				}
+			}
+		}
+
+		&:last-child {
+			margin-right: 0em;
+		}
+
+		@media only screen and (max-width : 480px) {
+			li {
+				margin-right: 0em;
+			}
+		}
+
+	}
+}
+
+
+
+
+
+
+

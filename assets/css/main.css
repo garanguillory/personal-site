@@ -1,0 +1,513 @@
+/*==== FADE IN UP ===*/
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1, 1); }
+  25% {
+    -webkit-transform: scale(1.25, 1.25); }
+  50% {
+    -webkit-transform: scale(1.5, 1.5); }
+  75% {
+    -webkit-transform: scale(1.25, 1.25); }
+  100% {
+    -webkit-transform: scale(1, 1); } }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1); }
+  25% {
+    transform: scale(1.25, 1.25); }
+  50% {
+    transform: scale(1.5, 1.5); }
+  75% {
+    transform: scale(1.25, 1.25); }
+  100% {
+    transform: scale(1, 1); } }
+
+.grow {
+  color: #FDD023;
+  display: inline-block;
+  transition: all .5s ease-in-out; }
+  .grow:hover {
+    color: inherit;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); }
+
+.grow-more {
+  color: #FDD023;
+  display: inline-block;
+  transition: all .5s ease-in-out; }
+  .grow-more:hover {
+    color: inherit;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5); }
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.one {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+
+.two {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+  animation-delay: 1.7s; }
+
+.three {
+  -webkit-animation-delay: 2.3s;
+  -moz-animation-delay: 2.3s;
+  animation-delay: 2.3s; }
+
+.four {
+  -webkit-animation-delay: 3.3s;
+  -moz-animation-delay: 3.3s;
+  animation-delay: 3.3s; }
+
+@-webkit-keyframes frontend-image-transition {
+  0% {
+    background: url("../images/javascript.svg") no-repeat;
+    background-size: 200px 200px; }
+  20% {
+    background: url("../images/jquery.svg") no-repeat;
+    background-size: 200px 200px; }
+  40% {
+    background: url("../images/angular.svg") no-repeat;
+    background-size: 200px 200px; }
+  60% {
+    background: url("../images/react.svg") no-repeat;
+    background-size: 200px 200px; }
+  80% {
+    background: url("../images/redux.svg") no-repeat;
+    background-size: 200px 200px; }
+  100% {
+    background: url("../images/javascript.svg") no-repeat;
+    background-size: 200px 200px; } }
+
+.frontend-image {
+  -moz-animation: frontend-image-transition 15s linear infinite;
+  -webkit-animation: frontend-image-transition 15s linear infinite;
+  -o-animation: frontend-image-transition 15s linear infinite;
+  animation: frontend-image-transition 15s linear infinite;
+  background-size: 200px 200px; }
+
+@-webkit-keyframes backend-image-transition {
+  0%, 100% {
+    background: url("../images/node.svg") no-repeat;
+    background-size: 200px 200px; }
+  20% {
+    background: url("../images/express.svg") no-repeat;
+    background-size: 200px 200px; }
+  40% {
+    background: url("../images/mongodb.svg") no-repeat;
+    background-size: 200px 200px; }
+  60% {
+    background: url("../images/postgresql.svg") no-repeat;
+    background-size: 200px 200px; }
+  80% {
+    background: url("../images/postgresql.svg") no-repeat;
+    background-size: 200px 200px; } }
+
+.backend-image {
+  -moz-animation: backend-image-transition 10s linear infinite;
+  -webkit-animation: backend-image-transition 10s linear infinite;
+  -o-animation: backend-image-transition 10s linear infinite;
+  animation: backend-image-transition 10s linear infinite;
+  background-size: 200px 200px; }
+
+@-webkit-keyframes note-cards-image-transition {
+  0% {
+    background: url("../images/notecard/notecard-profile-view.jpg") no-repeat;
+    background-size: cover; }
+  20% {
+    background: url("../images/notecard/notecard-deck-view.jpg") no-repeat;
+    background-size: cover; }
+  40% {
+    background: url("../images/notecard/notecard-newdeck-view.jpg") no-repeat;
+    background-size: cover; }
+  60% {
+    background: url("../images/notecard/notecard-editdeck-view.jpg") no-repeat;
+    background-size: cover; }
+  80% {
+    background: url("../images/notecard/notecard-study-view.jpg") no-repeat;
+    background-size: cover; }
+  100% {
+    background: url("../images/notecard/notecard-profile-view.jpg") no-repeat;
+    background-size: cover; } }
+
+.note-cards-image {
+  -moz-animation: note-cards-image-transition 15s linear infinite;
+  -webkit-animation: note-cards-image-transition 15s linear infinite;
+  -o-animation: note-cards-image-transition 15s linear infinite;
+  animation: note-cards-image-transition 15s linear infinite;
+  background-size: cover; }
+
+@-webkit-keyframes weather-image-transition {
+  0%, 100% {
+    background: url("../images/weather-forecast/weather-forecast-view-0.jpg") no-repeat;
+    background-size: cover; }
+  25% {
+    background: url("../images/weather-forecast/weather-forecast-view-1.jpg") no-repeat;
+    background-size: cover; }
+  50% {
+    background: url("../images/weather-forecast/weather-forecast-view-2.jpg") no-repeat;
+    background-size: cover; }
+  75% {
+    background: url("../images/weather-forecast/weather-forecast-view-3.jpg") no-repeat;
+    background-size: cover; } }
+
+.weather-image {
+  animation: weather-image-transition 15s linear infinite;
+  -moz-animation: weather-image-transition 15s linear infinite;
+  -webkit-animation: weather-image-transition 15s linear infinite;
+  -o-animation: weather-image-transition 15s linear infinite;
+  background-size: cover; }
+
+@-webkit-keyframes state-flag-quiz-image-transition {
+  0%, 100% {
+    background: url("../images/state-flag-quiz/state-flag-quiz-instructions-view.jpg") no-repeat;
+    background-size: cover; }
+  12.5% {
+    background: url("../images/state-flag-quiz/state-flag-quiz-unselected-question-view.jpg") no-repeat;
+    background-size: cover; }
+  25% {
+    background: url("../images/state-flag-quiz/state-flag-quiz-selected-question-view.jpg") no-repeat;
+    background-size: cover; }
+  37.5% {
+    background: url("../images/state-flag-quiz/state-flag-quiz-hover-question-view.jpg") no-repeat;
+    background-size: cover; }
+  50% {
+    background: url("../images/state-flag-quiz/state-flag-quiz-correct-answer-view.jpg") no-repeat;
+    background-size: cover; }
+  62.5% {
+    background: url("../images/state-flag-quiz/state-flag-quiz-incorrect-answer-view.jpg") no-repeat;
+    background-size: cover; }
+  75% {
+    background: url("../images/state-flag-quiz/state-flag-quiz-results-view.jpg") no-repeat;
+    background-size: cover; }
+  87.5% {
+    background: url("../images/state-flag-quiz/state-flag-quiz-results-new-game-view.jpg") no-repeat;
+    background-size: cover; } }
+
+.state-flag-quiz-image {
+  animation: state-flag-quiz-image-transition 15s linear infinite;
+  -moz-animation: state-flag-quiz-image-transition 15s linear infinite;
+  -webkit-animation: state-flag-quiz-image-transition 15s linear infinite;
+  -o-animation: state-flag-quiz-image-transition 15s linear infinite;
+  background-size: cover; }
+
+@-webkit-keyframes to-do-image-transition {
+  0%, 100% {
+    background: url("../images/to-do-list/to-do-list-view.jpg") no-repeat;
+    background-size: cover; }
+  50% {
+    background: url("../images/to-do-list/to-do-list-view-delete.jpg") no-repeat;
+    background-size: cover; } }
+
+.to-do-image {
+  animation: to-do-image-transition 5s linear infinite;
+  -moz-animation: to-do-image-transition 5s linear infinite;
+  -webkit-animation: to-do-image-transition 5s linear infinite;
+  -o-animation: to-do-image-transition 5s linear infinite;
+  background-size: cover; }
+
+@-webkit-keyframes reddit-clone-image-transition {
+  0%, 100% {
+    background: url("../images/reddit-clone/reddit-clone-comment-view.jpg") no-repeat;
+    background-size: cover; }
+  33.33% {
+    background: url("../images/reddit-clone/reddit-clone-home-view.jpg") no-repeat;
+    background-size: cover; }
+  66.66% {
+    background: url("../images/reddit-clone/reddit-clone-newpost-view.jpg") no-repeat;
+    background-size: cover; } }
+
+.reddit-clone-image {
+  animation: reddit-clone-image-transition 5s linear infinite;
+  -moz-animation: reddit-clone-image-transition 5s linear infinite;
+  -webkit-animation: reddit-clone-image-transition 5s linear infinite;
+  -o-animation: reddit-clone-image-transition 5s linear infinite;
+  background-size: cover; }
+
+@-webkit-keyframes employee-scheduling-image-transition {
+  0%, 100% {
+    background: url("../images/employee-scheduling/employee-scheduling-landing-page-view.jpg") no-repeat;
+    background-size: cover; }
+  14.2857% {
+    background: url("../images/employee-scheduling/employee-scheduling-options-view.jpg") no-repeat;
+    background-size: cover; }
+  28.5714% {
+    background: url("../images/employee-scheduling/employee-scheduling-signup-view.jpg") no-repeat;
+    background-size: cover; }
+  42.8571% {
+    background: url("../images/employee-scheduling/employee-scheduling-login-view.jpg") no-repeat;
+    background-size: cover; }
+  57.1428% {
+    background: url("../images/employee-scheduling/employee-scheduling-individual-employee-view.jpg") no-repeat;
+    background-size: cover; }
+  71.4285% {
+    background: url("../images/employee-scheduling/employee-scheduling-calendar-view.jpg") no-repeat;
+    background-size: cover; }
+  85.7142% {
+    background: url("../images/employee-scheduling/employee-scheduling-addbulk-view.jpg") no-repeat;
+    background-size: cover; } }
+
+.employee-scheduling-image {
+  animation: employee-scheduling-image-transition 30s linear infinite;
+  -moz-animation: employee-scheduling-image-transition 30s linear infinite;
+  -webkit-animation: employee-scheduling-image-transition 30s linear infinite;
+  -o-animation: employee-scheduling-image-transition 30s linear infinite;
+  background-size: cover; }
+
+.centered {
+  text-align: center; }
+
+ul {
+  padding-left: 0em; }
+  ul li {
+    list-style: none; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:active, a:visited {
+    text-decoration: none; }
+
+nav {
+  color: #FDD023;
+  height: 3em; }
+  nav .title {
+    color: #FDD023;
+    transition-property: color;
+    transition-duration: 3s; }
+    nav .title:hover {
+      color: #461D7C;
+      transition-duration: 1.5s; }
+  nav a {
+    color: #FDD023;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 3s; }
+    nav a:hover {
+      color: #461D7C;
+      text-decoration: none;
+      transition-duration: 1.5s; }
+  nav .navbar-list {
+    float: right; }
+    nav .navbar-list li {
+      display: inline-block;
+      margin-right: 1em; }
+      nav .navbar-list li:last-child {
+        margin-right: 0em; }
+
+.content {
+  position: relative;
+  background: #461D7C;
+  overflow: hidden; }
+
+.content:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.4;
+  background: url(../images/lsu_victory.jpg) no-repeat center center fixed;
+  background-repeat: no-repeat;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.welcome, .work {
+  color: white;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  top: 20vh;
+  z-index: 2; }
+  .welcome .name, .welcome .description, .work .name, .work .description {
+    font-size: 8em; }
+  .welcome .profession, .work .profession {
+    font-size: 4em; }
+  .welcome .name, .welcome .description, .welcome .profession, .work .name, .work .description, .work .profession {
+    transition-property: color;
+    transition-duration: 20s; }
+    .welcome .name:hover, .welcome .description:hover, .welcome .profession:hover, .work .name:hover, .work .description:hover, .work .profession:hover {
+      transition-duration: 1s;
+      color: #FDD023; }
+  @media only screen and (max-width: 480px) {
+    .welcome, .work {
+      top: 25vh; }
+      .welcome .name, .welcome .description, .work .name, .work .description {
+        font-size: 4em; }
+      .welcome .profession, .work .profession {
+        font-size: 1em; } }
+
+.work {
+  height: 60vh; }
+  @media only screen and (max-width: 480px) {
+    .work {
+      height: 80vh; } }
+
+.more-below {
+  -webkit-animation: pulse 3s linear infinite;
+  animation: pulse 3s linear infinite;
+  bottom: 0.5em;
+  color: white;
+  left: 48%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition-property: color;
+  transition-duration: 20s;
+  z-index: 2; }
+  .more-below:hover {
+    transition-duration: 1s;
+    color: #FDD023; }
+  @media only screen and (max-width: 480px) {
+    .more-below {
+      bottom: 2em; } }
+
+.hola, .portfolio {
+  background: white;
+  height: 100vh;
+  text-align: center; }
+  .hola .doing, .portfolio .doing {
+    color: #461D7C;
+    margin-top: 25vh;
+    margin-bottom: 15vh; }
+  .hola .hola-image, .hola .portfolio-image-intro, .hola .build-image, .portfolio .hola-image, .portfolio .portfolio-image-intro, .portfolio .build-image {
+    border: 4px solid #FDD023;
+    border-radius: 50%;
+    height: 200px;
+    margin-bottom: 2em;
+    margin-top: 4em;
+    width: 200px; }
+  .hola .build, .portfolio .build {
+    text-align: justify; }
+  .hola .build-text, .portfolio .build-text {
+    margin-top: 4em; }
+  .hola h4, .portfolio h4 {
+    color: #461D7C; }
+  .hola p, .portfolio p {
+    color: #461D7C;
+    font-size: 1.5em; }
+  @media only screen and (max-width: 480px) {
+    .hola p, .portfolio p {
+      font-size: 1em; }
+    .hola .build, .portfolio .build {
+      text-align: center; }
+      .hola .build h4, .portfolio .build h4 {
+        text-align: center; }
+      .hola .build p, .portfolio .build p {
+        text-align: justify; }
+    .hola .build-text, .portfolio .build-text {
+      margin-top: 2em; } }
+  @media only screen and (max-width: 768px) {
+    .hola p, .portfolio p {
+      font-size: 1em; }
+    .hola .build, .portfolio .build {
+      text-align: center; }
+      .hola .build h4, .portfolio .build h4 {
+        text-align: center; }
+      .hola .build p, .portfolio .build p {
+        text-align: justify; }
+    .hola .build-text, .portfolio .build-text {
+      margin-top: 3em; } }
+
+.portfolio p {
+  text-align: justify; }
+
+.portfolio .portfolio-piece-image {
+  border: 4px solid #FDD023;
+  height: 200px;
+  margin-bottom: 2em;
+  margin-top: 4em;
+  width: 100%; }
+
+#i-can-help {
+  margin-top: 10vh; }
+  @media only screen and (max-width: 480px) {
+    #i-can-help {
+      margin-top: 50vh; } }
+
+#welcome, #what-i-do,
+#portfolio, #i-can-help {
+  padding-top: 1px;
+  padding-bottom: 1px; }
+
+.helping {
+  color: #461D7C;
+  height: 100vh;
+  position: relative;
+  text-align: center; }
+  .helping .helping-text {
+    margin-top: 15vh; }
+    .helping .helping-text h2 {
+      font-size: 3em; }
+    .helping .helping-text h4 {
+      font-size: 2em;
+      margin-top: 2em; }
+    .helping .helping-text .message-me {
+      border-color: #461D7C;
+      color: #461D7C;
+      margin-top: 2em; }
+      .helping .helping-text .message-me:hover {
+        border-color: #FDD023;
+        background: #461D7C;
+        color: white; }
+    @media only screen and (max-width: 480px) {
+      .helping .helping-text h4 {
+        font-size: 1em; } }
+
+.bottom {
+  bottom: 0px;
+  position: relative;
+  text-align: center; }
+  .bottom li {
+    display: inline-block;
+    margin-right: 3em; }
+    .bottom li a i {
+      color: #461D7C;
+      transition-property: color;
+      transition-duration: 20s; }
+      .bottom li a i:hover {
+        color: #FDD023;
+        transition-duration: 1.5s; }
+    .bottom li:last-child {
+      margin-right: 0em; }
+    @media only screen and (max-width: 480px) {
+      .bottom li li {
+        margin-right: 0em; } }
