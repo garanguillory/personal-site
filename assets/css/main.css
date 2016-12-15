@@ -490,9 +490,8 @@ nav {
         font-size: 1em; } }
 
 .bottom {
-  background: pink;
-  display: block;
   height: 2em;
+  margin-top: 4em;
   text-align: center; }
   .bottom li {
     display: inline-block;
@@ -534,6 +533,9 @@ nav {
     @media only screen and (max-width: 480px) {
       .helper .helping-text h4 {
         font-size: 1em; } }
+
+#hola {
+  color: #461D7C; }
 
 @media only screen and (max-width: 768px) {
   .heading {

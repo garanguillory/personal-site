@@ -280,14 +280,11 @@
 
 // remove pink background
 .bottom {
-	background: pink;
-	display: block;
-	// top: 2vh;
+	// background: pink;
+	// display: block;
 	height: 2em;
-	// clear: both;
-	// position: relative;
+	margin-top: 4em;
 	text-align: center;
-	// transform: translate(-50%,-50%);
 
 	li {
 		display: inline-block;
@@ -359,7 +356,12 @@
 	}
 }
 
+#hola {
+	color: $purple;
+}
+
 .heading {
+
 	@media only screen and (max-width : 768px) {
 		text-align: center;
 	}
@@ -400,9 +402,5 @@
 	}
 }
 
-// .backend-image {
-// 	@media only screen and (max-width : 768px) {
-// 		float: none;
-// 	}
-// }
+
 
