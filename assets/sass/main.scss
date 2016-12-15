@@ -44,7 +44,7 @@
 	text-align: center;
 	top: 20vh;
 	// transform: translateY(25%);
-	z-index: 2;
+	z-index: 1;
 	
 	.name, .description {
 		font-size: 8em;
@@ -81,7 +81,7 @@
 	height: 60vh;
 
 	@media only screen and (max-width : 480px) {
-		height: 80vh;
+		// height: 80vh;
 	}
 }
 
@@ -209,29 +209,43 @@
 	}
 }
 
+
+
 #i-can-help {
-	margin-top: 10vh;
+	display: none;
+	// margin-top: 10vh;
 
 	@media only screen and (max-width : 480px) {
-		margin-top: 50vh;
+		// margin-top: 50vh;
 	}
 }
 
-#welcome, #what-i-do,
-#portfolio, #i-can-help {
-	padding-top: 1px;
-	padding-bottom: 1px;
+#contact {
+	// clear: both;
+	// padding-top: 1px;
+	// padding-bottom: 1px;
 }
 
+.clearfix {
+	// overflow: auto;
+	&:after{
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+	}
+}
 
 .helping {
 	color: $purple;
 	height: 100vh;
-	position: relative;
+	margin-top: 2em;
+	padding-top: 2em;
 	text-align: center;
 
 	.helping-text {
-		margin-top: 15vh;
+		margin-top: 4em;
 
 		h2 {
 			font-size: 3em;
@@ -262,9 +276,16 @@
 	}
 }
 
+/////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// remove pink background
 .bottom {
-	bottom: 0px;
-	position: relative;
+	background: pink;
+	display: block;
+	// top: 2vh;
+	height: 2em;
+	// clear: both;
+	// position: relative;
 	text-align: center;
 	// transform: translate(-50%,-50%);
 
@@ -294,13 +315,94 @@
 				margin-right: 0em;
 			}
 		}
+	}
+}
 
+.helper {
+	color: $purple;
+	display: block;
+	height: 80vh;
+	margin-top: 2em;
+	// padding-top: 2em;
+	// position: relative;
+	text-align: center;
+
+	.helping-text {
+		margin-top: 4em;
+
+		h2 {
+			font-size: 3em;
+		}
+		h4 {
+			font-size: 2em;
+			margin-top: 2em;
+		}
+		.message-me {
+			border-color: $purple;
+			color: $purple;
+			margin-top: 2em;
+
+			&:hover {
+				border-color: $yellow;
+				background: $purple;
+				color: white;
+			}
+		}
+		@media only screen and (max-width : 480px) {
+			h2 {
+				// font-size: 1.5em;
+			}
+			h4 {
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+.heading {
+	@media only screen and (max-width : 768px) {
+		text-align: center;
+	}
+}
+
+.heading-front-end,
+.heading-backend {
+	margin-top: 20%;
+}
+
+.heading-doing {
+	margin: 15% 0;
+}
+
+.technology {
+	text-align: justify;
+	@media only screen and (max-width : 768px) {
+		text-align: justify;
 	}
 }
 
 
+.hola-image, .build-image,
+.portfolio-image-intro {
+	border: 4px solid $yellow;
+	border-radius: 50%;
+	height: 200px;
+	margin-bottom: 2em;
+	margin-top: 4em;
+	width: 200px;
+}
 
+.build-image {
+	@media only screen and (max-width : 768px) {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+	}
+}
 
-
-
+// .backend-image {
+// 	@media only screen and (max-width : 768px) {
+// 		float: none;
+// 	}
+// }
 

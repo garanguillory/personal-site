@@ -357,7 +357,7 @@ nav {
   position: relative;
   text-align: center;
   top: 20vh;
-  z-index: 2; }
+  z-index: 1; }
   .welcome .name, .welcome .description, .work .name, .work .description {
     font-size: 8em; }
   .welcome .profession, .work .profession {
@@ -378,9 +378,6 @@ nav {
 
 .work {
   height: 60vh; }
-  @media only screen and (max-width: 480px) {
-    .work {
-      height: 80vh; } }
 
 .more-below {
   -webkit-animation: pulse 3s linear infinite;
@@ -458,23 +455,23 @@ nav {
   width: 100%; }
 
 #i-can-help {
-  margin-top: 10vh; }
-  @media only screen and (max-width: 480px) {
-    #i-can-help {
-      margin-top: 50vh; } }
+  display: none; }
 
-#welcome, #what-i-do,
-#portfolio, #i-can-help {
-  padding-top: 1px;
-  padding-bottom: 1px; }
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
 
 .helping {
   color: #461D7C;
   height: 100vh;
-  position: relative;
+  margin-top: 2em;
+  padding-top: 2em;
   text-align: center; }
   .helping .helping-text {
-    margin-top: 15vh; }
+    margin-top: 4em; }
     .helping .helping-text h2 {
       font-size: 3em; }
     .helping .helping-text h4 {
@@ -493,8 +490,9 @@ nav {
         font-size: 1em; } }
 
 .bottom {
-  bottom: 0px;
-  position: relative;
+  background: pink;
+  display: block;
+  height: 2em;
   text-align: center; }
   .bottom li {
     display: inline-block;
@@ -511,3 +509,60 @@ nav {
     @media only screen and (max-width: 480px) {
       .bottom li li {
         margin-right: 0em; } }
+
+.helper {
+  color: #461D7C;
+  display: block;
+  height: 80vh;
+  margin-top: 2em;
+  text-align: center; }
+  .helper .helping-text {
+    margin-top: 4em; }
+    .helper .helping-text h2 {
+      font-size: 3em; }
+    .helper .helping-text h4 {
+      font-size: 2em;
+      margin-top: 2em; }
+    .helper .helping-text .message-me {
+      border-color: #461D7C;
+      color: #461D7C;
+      margin-top: 2em; }
+      .helper .helping-text .message-me:hover {
+        border-color: #FDD023;
+        background: #461D7C;
+        color: white; }
+    @media only screen and (max-width: 480px) {
+      .helper .helping-text h4 {
+        font-size: 1em; } }
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    text-align: center; } }
+
+.heading-front-end,
+.heading-backend {
+  margin-top: 20%; }
+
+.heading-doing {
+  margin: 15% 0; }
+
+.technology {
+  text-align: justify; }
+  @media only screen and (max-width: 768px) {
+    .technology {
+      text-align: justify; } }
+
+.hola-image, .build-image,
+.portfolio-image-intro {
+  border: 4px solid #FDD023;
+  border-radius: 50%;
+  height: 200px;
+  margin-bottom: 2em;
+  margin-top: 4em;
+  width: 200px; }
+
+@media only screen and (max-width: 768px) {
+  .build-image {
+    margin-left: auto;
+    margin-right: auto;
+    float: none; } }
