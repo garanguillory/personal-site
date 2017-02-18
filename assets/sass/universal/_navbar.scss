@@ -1,9 +1,8 @@
-
-
 nav {
 	color: $yellow;
 	height: 3em;
-	width: 100% !important;
+	width: 100%;
+	z-index: 2;
 
 	.title {
 		color: $yellow;
@@ -13,6 +12,10 @@ nav {
 		&:hover {
 			color: $purple;
 			transition-duration: 1.5s;
+		}
+		&:visited {
+			color: inherit;
+			text-decoration: none;
 		}
 	}
 
@@ -27,6 +30,10 @@ nav {
 			text-decoration: none;
 			transition-duration: 1.5s;
 		}
+		// &:visited {
+		// 	color: inherit;
+		// 	text-decoration: none;
+		// }
 	}
 
 	.navbar-list {
@@ -39,6 +46,24 @@ nav {
 			&:last-child {
 				margin-right: 0em;
 			}
+
+			a {
+				// color: $yellow;
+				// text-decoration: none;
+				// transition-property: color;
+				// transition-duration: 3s;
+
+				// &:hover {
+				// 	color: $purple;
+				// 	text-decoration: none;
+				// 	transition-duration: 1.5s;
+				// }
+				&:visited {
+					color: inherit;
+					text-decoration: none !important;
+				}
+			}
+
 		}
 	}
 }
