@@ -305,7 +305,8 @@ a {
 
 nav {
   color: #FDD023;
-  height: 3em; }
+  height: 3em;
+  width: 100% !important; }
   nav .title {
     color: #FDD023;
     transition-property: color;
@@ -350,6 +351,9 @@ nav {
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover; }
+
+nav {
+  width: 100%; }
 
 .welcome, .work {
   color: white;
