@@ -391,6 +391,18 @@ a, a:visited, a:active {
       .welcome .profession, .work .profession {
         font-size: 1em; } }
 
+.greeting-text {
+  margin: 0 auto;
+  width: 50%; }
+  .greeting-text a {
+    color: #FDD023;
+    text-decoration: none; }
+    .greeting-text a:visited {
+      color: #FDD023; }
+  @media (max-width: 765px) {
+    .greeting-text {
+      width: 90%; } }
+
 .work {
   height: 60vh; }
 
@@ -438,24 +450,31 @@ a, a:visited, a:active {
   margin-top: 2em;
   padding-top: 2em;
   text-align: center; }
-  .helping .helping-text {
-    margin-top: 4em; }
-    .helping .helping-text h2 {
-      font-size: 3em; }
-    .helping .helping-text h4 {
-      font-size: 2em;
-      margin-top: 2em; }
-    .helping .helping-text .message-me {
-      border-color: #461D7C;
-      color: #461D7C;
-      margin-top: 2em; }
-      .helping .helping-text .message-me:hover {
-        border-color: #FDD023;
-        background: #461D7C;
-        color: white; }
-    @media only screen and (max-width: 480px) {
-      .helping .helping-text h4 {
-        font-size: 1em; } }
+
+.helping-text {
+  margin-top: 4em; }
+  .helping-text h2 {
+    font-size: 3em; }
+  .helping-text h4 {
+    font-size: 2em;
+    margin-top: 2em; }
+  .helping-text p {
+    margin: 0 auto 1em auto;
+    width: 50%; }
+    @media (max-width: 765px) {
+      .helping-text p {
+        width: 90%; } }
+  .helping-text .message-me {
+    border-color: #461D7C;
+    color: #461D7C;
+    margin-top: 2em; }
+    .helping-text .message-me:hover {
+      border-color: #FDD023;
+      background: #461D7C;
+      color: white; }
+  @media only screen and (max-width: 480px) {
+    .helping-text h4 {
+      font-size: 1em; } }
 
 .bottom {
   height: 2em;

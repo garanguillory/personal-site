@@ -79,6 +79,24 @@ a, a:visited, a:active {
 	}
 }
 
+.greeting-text {
+	margin: 0 auto;
+	width: 50%;
+
+	a{
+		color: #FDD023;
+		text-decoration: none;
+
+		&:visited{
+			color: #FDD023;
+		}
+	}
+
+	@media(max-width: 765px){
+		width: 90%;
+	}
+}
+
 // work page
 
 .work {
@@ -162,6 +180,7 @@ a, a:visited, a:active {
 	padding-top: 2em;
 	text-align: center;
 
+}
 	.helping-text {
 		margin-top: 4em;
 
@@ -171,6 +190,14 @@ a, a:visited, a:active {
 		h4 {
 			font-size: 2em;
 			margin-top: 2em;
+		}
+		p {
+			margin: 0 auto 1em auto;
+			width: 50%;
+			
+			@media(max-width: 765px){
+				width: 90%;
+			}
 		}
 		.message-me {
 			border-color: $purple;
@@ -192,7 +219,6 @@ a, a:visited, a:active {
 			}
 		}
 	}
-}
 
 /////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
