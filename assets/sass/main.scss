@@ -43,7 +43,7 @@ a, a:visited, a:active {
 
 .welcome, .work {
 	color: white;
-	height: 100vh;
+	height: 94vh;
 	position: relative;
 	text-align: center;
 	top: 20vh;
@@ -68,6 +68,7 @@ a, a:visited, a:active {
 	}
 	
 	@media only screen and (max-width : 480px) {
+		height: 100vh;
 		top: 25vh;
 
 	  .name, .description {
